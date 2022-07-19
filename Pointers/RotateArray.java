@@ -1,4 +1,4 @@
-package Pointers;
+package pointers;
 
 /*
  * Title: Rotate Array

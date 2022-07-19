@@ -1,4 +1,4 @@
-package Pointers;
+package pointers;
 import java.util.Arrays;
 /*
  * Title: Squares of a Sorted Array
