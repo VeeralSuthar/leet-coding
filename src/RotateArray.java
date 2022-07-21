@@ -1,5 +1,3 @@
-package pointers;
-
 /*
  * Title: Rotate Array
  * 
