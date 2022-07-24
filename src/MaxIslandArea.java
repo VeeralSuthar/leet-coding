@@ -11,14 +11,16 @@
  * Time Complexity: O(n*m)
  */
 public class MaxIslandArea {
-     public int maxAreaOfIsland(int[][] grid) {
+    
+    int m, n;
+    public int maxAreaOfIsland(int[][] grid) {
         
         int largestIsland = 0;
-        rowLen = grid.length;
-        colLen = grid[0].length;
+        m = grid.length;
+        n = grid[0].length;
         
-        for (int i = 0; i < rowLen; i++) {
-            for (int j = 0; j < colLen; j++) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
                 if (grid[i][j] == 1) largestIsland = Math.max(largestIsland,getIslandSize(i,j,grid));
             }
         }
@@ -26,7 +28,7 @@ public class MaxIslandArea {
     }
     public int getIslandSize(int sr, int sc, int[][] grid) {
         int island = 0;
-        if (sr < 0 || sc < 0 || sr >= rowLen || sc >= colLen || grid[sr][sc] == 0) return 0;
+        if (sr < 0 || sc < 0 || sr >= m || sc >= n || grid[sr][sc] == 0) return 0;
         grid[sr][sc] = 0;
         island++;
         island += getIslandSize(sr-1,sc,grid);
