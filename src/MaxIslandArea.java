@@ -12,7 +12,8 @@
  */
 public class MaxIslandArea {
     
-    int m, n;
+    int m;
+    int n;
     public int maxAreaOfIsland(int[][] grid) {
         
         int largestIsland = 0;
