@@ -30,7 +30,7 @@ public class SquaresOfASortedArray {
     public int[] sortedSquares(int[] nums) {
         int left = 0;
         int right = nums.length-1;
-        int ret[] = new int[nums.length];
+        int[] ret = new int[nums.length];
         int index = nums.length-1;
 
         for (int i = 0; i < nums.length; i++) {

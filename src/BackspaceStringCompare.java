@@ -2,8 +2,8 @@ import java.util.*;
 
 public class BackspaceStringCompare {
     public boolean backspaceCompare(String s, String t) {
-        Stack<Character> s1 = new Stack<Character>();
-        Stack<Character> s2 = new Stack<Character>();
+        Stack<Character> s1 = new Stack<>();
+        Stack<Character> s2 = new Stack<>();
         
         for (char c : s.toCharArray()) {
             if (c == '#') {

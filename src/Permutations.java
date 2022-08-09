@@ -15,7 +15,7 @@ import java.util.List;
 public class Permutations {
     public List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> permutations = new ArrayList<>();
-        backtrack(nums,new ArrayList<Integer>(),permutations);
+        backtrack(nums,new ArrayList<>(),permutations);
         return permutations;
     }
     
