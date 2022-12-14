@@ -24,7 +24,7 @@ class ReverseLinkedList {
     }
 
     // Recusively reverse the linked list
-    func recusivelyReverseList(_ head: ListNode?) -> ListNode? {
+    func recursivelyReverseList(_ head: ListNode?) -> ListNode? {
         
         // Empty List
 	    guard let head = head else { return nil }
